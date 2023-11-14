@@ -16,7 +16,7 @@
     "cypress",
     "automation"
   ],
-  "author": "",
+  "author": "automated software testing with Cypress",
   "license": "ISC",
   "bugs": {
     "url": "https://github.com/jakubfedyk/cypress_testing/issues"
