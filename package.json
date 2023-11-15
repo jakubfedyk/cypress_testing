@@ -1,31 +1,25 @@
 {
+  "dependencies": {
+    "prettier": "^3.1.0"
+  },
+  "devDependencies": {
+    "cypress": "^13.5.1"
+  },
   "name": "cypress-exercises",
   "version": "1.0.0",
-  "description": "automated software testing cypress",
   "main": "index.js",
   "scripts": {
-    "cy:open": "cypress open",
-    "cy:run": "cypress run"
+    "cy:open": "cypress open"
   },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/jakubfedyk/cypress_testing.git"
   },
-  "keywords": [
-    "testing",
-    "cypress",
-    "automation"
-  ],
-  "author": "automated software testing with Cypress",
+  "author": "",
   "license": "ISC",
   "bugs": {
     "url": "https://github.com/jakubfedyk/cypress_testing/issues"
   },
   "homepage": "https://github.com/jakubfedyk/cypress_testing#readme",
-  "dependencies": {
-    "prettier": "^2.7.1"
-  },
-  "devDependencies": {
-    "cypress": "^9.7.0"
-  }
+  "description": ""
 }
