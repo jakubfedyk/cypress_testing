@@ -9,7 +9,8 @@
   "version": "1.0.0",
   "main": "index.js",
   "scripts": {
-    "cy:open": "cypress open"
+    "cy:open": "cypress open",
+    "cy:run" : "cypress run"
   },
   "repository": {
     "type": "git",
