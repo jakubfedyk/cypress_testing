@@ -1,16 +1,18 @@
 {
   "dependencies": {
+    "jquery": "^3.7.1",
     "prettier": "^3.1.0"
   },
   "devDependencies": {
-    "cypress": "^13.5.1"
+    "cypress": "^13.5.1",
+    "typescript": "^5.3.2"
   },
   "name": "cypress-exercises",
   "version": "1.0.0",
   "main": "index.js",
   "scripts": {
     "cy:open": "cypress open",
-    "cy:run" : "cypress run"
+    "cy:run": "cypress run"
   },
   "repository": {
     "type": "git",
