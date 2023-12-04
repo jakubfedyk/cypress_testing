@@ -1,26 +1,29 @@
 /// <reference types="Cypress" />
 
+import ExamplePage from "../pages/ExamplePage"
+
 describe('Cypress e2e Testing Demo', () => {
   beforeEach(() => {
-    cy.visit('https://example.com')
+   // cy.visit('https://example.com')
+   const examplePage = new ExamplePage()
+   examplePage.openExamplePage()
+
   })
 
     afterEach(() => {
       cy.log('Running after each of my tests')
     })
-  it('Assert url', () => {
-    cy.url().should('contain', 'example.com')
+  it('Assert url and title', () => {
+    const examplePage = new ExamplePage()
+    examplePage.assertUrl()
+    examplePage.assertTitle()
 
   })
 
-  it('Assert title', () => {
-    cy.title().should('contain','Example Domain')
-  })
 
   it('Assert element',() => {
-    cy.get('h1').should('be.visible')
-    cy.wait(2000)
-    cy.get('p').should('be.visible')
+    const examplePage = new ExamplePage()
+    examplePage.assertH1Element()
   })
 
   it('Reload and Logs', () => {
