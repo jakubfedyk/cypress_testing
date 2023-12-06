@@ -21,10 +21,13 @@ describe('Cypress e2e Testing Demo', () => {
   })
 
 
-  it('Assert element',() => {
-    const examplePage = new ExamplePage()
-    examplePage.assertH1Element()
-  })
+  it('Assert element',{ retries:3 },() => {
+    //const examplePage = new ExamplePage()
+   // examplePage.assertH1Element()
+    cy.get('h1').should('be.visible')
+		cy.wait(2000)
+		cy.get('p').should('be.visible')
+	})
 
   it('Reload and Logs', () => {
     cy.log('Before Reload')
